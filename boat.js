@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// For hover on categories and more
 
 document.addEventListener('DOMContentLoaded', function () {
     const cat = document.querySelector('.cat1');
@@ -69,5 +70,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     cat.addEventListener('mouseleave', function () {
         category.classList.remove('active');
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const more1 = document.querySelector('.more1');
+    const more = document.querySelector('.more')
+    more1.addEventListener('mouseenter', function () {
+        more.classList.add("active");
+    });
+
+    more1.addEventListener('mouseleave', function () {
+        more.classList.remove('active');
     });
 });
